@@ -69,14 +69,14 @@ def calculate_bmi(kilograms, meters):
     return bmi
 
 
-
+#This is my main function
 def main():
     weight, height = my_input()
-    
-    
     kg = calculate_weight(weight)
     m = calculate_height(height)
     body_mass_index = calculate_bmi(kg, m)
     print(f"Your body mass index is {body_mass_index:.2f}%")
 
 main()
+
+#I don't know if you remember, but I used your help specifically, because I had struggled in the midst of the assignment. So many assignments I had completed but just forgot to turn in.
