@@ -42,12 +42,12 @@ The {calculated_interest:,.2f} does the same for the calculated interest.
 Test your function with different values to ensure it works correctly.
 """
 
-
+#This is the main function, it will call the entire function at the end.
 def calculate_interest():
     principal = int(input("What is the initial amount of money? "))
     rate = int(input("What is your yearly rate (use whole numbers, not decimals.) "))
     time = int(input("How many years are you going to be keeping the money invested? (please put a number only.) "))
-    print(f"The base principal is {principal} with a rate of {rate / 100}% over {time} years")
-    simple_interest = (principal * rate * time) / 100
+    print(f"The base principal is {principal} with a rate of {rate / 100}% over {time} years") #this equation makes it so that the user doesn't have to input their rate at a decimal, simplifying it for the user.
+    simple_interest = (principal * rate * time) / 100 #tried to make the text as user friendly as possible.
     print(f"Your money gained after {time} years will be {simple_interest:.2f}$ and your total will be {principal + simple_interest:.2f}$")
 calculate_interest()
