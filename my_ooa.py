@@ -44,7 +44,7 @@ class person: #just an ordinary joeseph
         self.__address = address
         self.__age = age
         self.__phone = phone
-
+#This will help us apply prefixes to information for each person
     def get_info(self): 
         return (f"name: {self.__name}, home: {self.__address}, age: {self.__age}, phone number: {self.__phone}")
 
@@ -52,11 +52,11 @@ class person: #just an ordinary joeseph
 def main():
     person_1 = person("Henry Mundis", "2012 Elmers street", "22 years and 3 days old", "101-232-8948")
     print(person_1.get_info())
-
+#result is name: Henry Mundis, home: 2012 Elmers street, age: 22 years and 3 days old, phone number: 101-232-8948
     person_2 = person("Agatha Mundis", "180 acrewood avenue", "82 years and 2 years old", "180-555-cash-back-now")
     print(person_2.get_info())
-
+#result is name: Agatha Mundis, home: 180 acrewood avenue, age: 82 years and 2 years old, phone number: 180-555-cash-back-now
     person_3 = person("Marge Mundis", "the fog", "35 years old", "222-222-2223")
     print(person_2.get_info())
-
+#result is name: Agatha Mundis, home: 180 acrewood avenue, age: 82 years and 2 years old, phone number: 180-555-cash-back-now
 main()
