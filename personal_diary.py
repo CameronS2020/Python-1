@@ -27,7 +27,7 @@ def main():
     with open('diary/diary.txt', 'w') as file:
         file.write(date + ', ' + time + ', ' + entry)
     with close('diary/diary.txt') as file:
-        file.close('diary.txt')
+        file.close()
 
         
 main()
